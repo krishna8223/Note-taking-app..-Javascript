@@ -16,12 +16,12 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #00cec9;
+  background-color: #4ae4e1;
   color: black;
 }
 
 ::selection {
-  background-color: #00cec9;
+  background-color: #4ae4e1;
   color: black;
 }
 
