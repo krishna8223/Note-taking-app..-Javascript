@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+::-moz-selection {
+  background-color: #00cec9;
+  color: black;
+}
+
+::selection {
+  background-color: #00cec9;
+  color: black;
+}
+
+nav {
+  background-color: #d49466;
+  height: 10rem;
+  padding-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .add {
+  height: 5rem;
+  cursor: pointer;
+  width: 11rem;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  background-color: palegoldenrod;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0.5rem;
+}
+
+nav .add:hover {
+  background-color: #e7f18b;
+}
+
+nav .add:active {
+  background-color: black;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.main .note {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 43rem;
+  width: 35rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main .note .items {
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.main .note .items img {
+  height: 60%;
+  cursor: pointer;
+  z-index: 111;
+  margin: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .note .items img:hover {
+  -webkit-transform: rotateZ(30deg);
+          transform: rotateZ(30deg);
+}
+
+.main .note textarea {
+  height: 90%;
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  outline: none;
+  font-size: 1.8rem;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+@media (max-width: 400px) {
+  .main .note {
+    width: 87%;
+    height: 30rem;
+  }
+  .main {
+    gap: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
